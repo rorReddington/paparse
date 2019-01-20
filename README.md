@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 
     int err = cmdParse(itemList, argc, argv);
 
-    if (err != Ok) {
+    if ((err != Ok) && (err != NoKey)) {
 
         printError(err);
         return 0;
